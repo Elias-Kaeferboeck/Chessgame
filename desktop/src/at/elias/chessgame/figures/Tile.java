@@ -17,7 +17,7 @@ public class Tile {
     private Color color;
     private boolean highlighted;
 
-    private Texture selectionMarker;
+    private Texture texture;
 
     private ChessPiece hasHighlighted;
 
@@ -37,7 +37,7 @@ public class Tile {
 
         this.hasHighlighted = null;
 
-        this.selectionMarker = new Texture(Gdx.files.internal("selection_marker.png"));
+        this.texture = new Texture(Gdx.files.internal("selection_marker.png"));
     }
 
     public Color getColor() {
@@ -65,7 +65,7 @@ public class Tile {
     }
 
     public Texture getTexture() {
-        return selectionMarker;
+        return texture;
     }
 
     public boolean isHighlighted() {
